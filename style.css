@@ -1,0 +1,88 @@
+body {
+    font-family: 'Consolas', Courier, monospace;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900; 
+}
+
+.container {
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.containterTextButton {
+    margin-bottom: 150px;
+}
+
+button {
+    font-family: 'Consolas', Courier, monospace;
+    font-weight: 800;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #161616;
+}
+
+.dado-container {
+    perspective: 20000px;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes shake {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    50% { transform: rotateX(720deg) rotateY(720deg); }
+    100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+.dado.shaking {
+    animation: shake 2s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards; /* Duración de 3 segundos */
+}
+
+.dado {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 1s; /* Duración de la rotación final */
+    margin: 0 auto; /* Centra el dado dentro del contenedor */
+}
+
+
+.face {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 12px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.front  { transform: translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.right  { transform: rotateY(90deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
