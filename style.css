@@ -62,6 +62,7 @@ button:hover {
     transform: rotateX(0deg) rotateY(0deg);
     transition: transform 1s; /* Duración de la rotación final */
     margin: 0 auto; /* Centra el dado dentro del contenedor */
+    cursor: pointer;
 }
 
 
