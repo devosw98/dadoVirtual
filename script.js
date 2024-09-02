@@ -1,4 +1,5 @@
-document.getElementById('rollButton').addEventListener('click', function() {
+// Función para lanzar el dado
+function lanzarDado() {
     const dado = document.getElementById('dado');
 
     // Añade la clase de animación
@@ -14,5 +15,11 @@ document.getElementById('rollButton').addEventListener('click', function() {
 
         // Aplica rotación 3D al dado
         dado.style.transform = `rotateX(${randomX}deg) rotateY(${randomY}deg)`;
-    }, 1000); // Duración de la animación en milisegundos (debe coincidir con la duración de la animación CSS)
-});
+    }, 2000); // Ajusta a la duración de la animación CSS (2000 ms)
+}
+
+// Asigna el evento de clic al botón
+document.getElementById('rollButton').addEventListener('click', lanzarDado);
+
+// Asigna el evento de clic al dado
+document.getElementById('dado').addEventListener('click', lanzarDado);
