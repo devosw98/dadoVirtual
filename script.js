@@ -21,5 +21,7 @@ function lanzarDado() {
 // Asigna el evento de clic al botón
 document.getElementById('rollButton').addEventListener('click', lanzarDado);
 
-// Asigna el evento de clic al dado
-document.getElementById('dado').addEventListener('click', lanzarDado);
+// Asigna eventos de clic y toque al dado
+const dado = document.getElementById('dado');
+dado.addEventListener('click', lanzarDado);
+dado.addEventListener('touchstart', lanzarDado);
