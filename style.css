@@ -65,9 +65,7 @@ button:hover {
     cursor: pointer;
 }
 
-
 .face {
-    color: rgb(0, 0, 0);
     position: absolute;
     width: 100px;
     height: 100px;
@@ -76,9 +74,11 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
-    font-weight: 900;
     border-radius: 20px;
+}
+
+img{
+    scale: 12%;
 }
 
 .front  { transform: translateZ(50px); }
