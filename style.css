@@ -1,5 +1,5 @@
 body {
-    font-family: 'Consolas', Courier, monospace;
+    font-family: "Unlock", serif;
     height: 100vh;
     background-color: #ffffff;
 }
@@ -7,9 +7,18 @@ body {
 h1 {
     font-size: 40px;
     font-weight: 900; 
+    font-style: normal;
+    margin-bottom: 1px;
+}
+
+p{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 18px;
 }
 
 .container {
+    margin-top: 100px;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -17,73 +26,58 @@ h1 {
 }
 
 .containterTextButton {
-    margin-bottom: 150px;
+    padding: 35px;
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 25px;
+    margin: auto;
+    flex-wrap: wrap; /* Asegura la responsividad */
 }
 
 button {
-    font-family: 'Consolas', Courier, monospace;
-    font-weight: 800;
-    padding: 10px 20px;
+    padding: 10px;
+    font-family: "Unlock", serif;
+    font-weight: 400;
     font-size: 16px;
     background-color: #000000;
     color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #161616;
-}
-
-.dado-container {
-    perspective: 20000px;
-    width: 100px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@keyframes shake {
-    0% { transform: rotateX(0deg) rotateY(0deg); }
-    50% { transform: rotateX(720deg) rotateY(720deg); }
-    100% { transform: rotateX(0deg) rotateY(0deg); }
-}
-
-.dado.shaking {
-    animation: shake 2s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards; /* Duración de 3 segundos */
-}
-
-.dado {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg);
-    transition: transform 1s; /* Duración de la rotación final */
-    margin: 0 auto; /* Centra el dado dentro del contenedor */
-    cursor: pointer;
-}
-
-.face {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #ffffff;
-    border: 12px solid #000000;
+    width: 175px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Organización en columna */
     align-items: center;
-    border-radius: 20px;
+    justify-content: center;
+    gap: 5px; /* Espacio entre icono y texto */
+    transition: all 0.8s ease; /* Transición suave para hover */
 }
 
-img{
-    scale: 12%;
+button img {
+    display: none; /* El icono está oculto por defecto */
 }
 
-.front  { transform: translateZ(50px); }
-.back   { transform: rotateY(180deg) translateZ(50px); }
-.right  { transform: rotateY(90deg) translateZ(50px); }
-.left   { transform: rotateY(-90deg) translateZ(50px); }
-.top    { transform: rotateX(90deg) translateZ(50px); }
-.bottom { transform: rotateX(-90deg) translateZ(50px); }
+button span {
+    visibility: visible; /* El texto es visible por defecto */
+}
+
+button:hover, 
+button:active {
+    background-color: white; /* Cambia el fondo a blanco */
+    color: black; /* Cambia el texto a negro */
+    border: 5px solid black; /* Añade un borde negro */
+}
+
+button:hover img,
+button:active img {
+    margin-top: 20px;
+    display: inline-block; /* Muestra el icono en hover o clic */
+    scale: 10%;
+    font-display: none;
+}
+
+button:hover span,
+button:active span {
+    visibility: hidden; /* Oculta el texto en hover o clic */
+}

@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dado Virtual</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unlock&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="containterTextButton">
-            <h1>Dado virtual</h1>
-            <button id="rollButton">Lanzar dado</button>
-        </div>
-        <div class="dado-container">
-            <div class="dado" id="dado">
-                <div class="face front"><img src="img/1_dado.png"></div>
-                <div class="face back"><img src="img/6_dado.png"></div>
-                <div class="face right"><img src="img/4_dado.png"></div>
-                <div class="face left"><img src="img/3_dado.png"></div>
-                <div class="face top"><img src="img/5_dado.png"></div>
-                <div class="face bottom"><img src="img/2_dado.png"></div>
-            </div>
-        </div>
+      <h1>Bienvenido</h1>
+      <p>Elige el modo que deseas usar:</p>
+      <div class="containterTextButton">
+        <button id="bnt_unDado" onclick="window.location.href='un_dado.html'">
+            <img src="img/dadoIcon.png">
+            <span>Un dado</span>
+        </button>
+        <button id="btn_dosDados" onclick="window.location.href='dos_dados.html'">
+            <img src="img/dadoIcon.png">
+            <span>Doble dado</span>
+        </button>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
