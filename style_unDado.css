@@ -1,23 +1,46 @@
+/* Oculta el contenido con opacidad 0 inicialmente */
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Mostrar el contenido con opacidad 1 */
+.fade-in {
+    opacity: 1;
+}
+
 body {
     font-family: "Unlock", serif;
     height: 100vh;
     background-color: #ffffff;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: 900; 
-}
-
 .container {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    align-items: center;
 }
 
 .containterTextButton {
     margin-bottom: 150px;
+    margin-top: -180px;
+}
+
+.btn_volverIcon:hover {
+    cursor: pointer;    
+    scale: 15%;
+    transition: all 0.5s ease;
+}
+
+.btn_volverIcon{
+    margin-bottom: -200px;
+    scale: 10%;
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 900; 
 }
 
 button {

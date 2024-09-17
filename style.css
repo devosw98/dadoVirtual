@@ -1,3 +1,14 @@
+/* Oculta el contenido con opacidad 0 inicialmente */
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Mostrar el contenido con opacidad 1 */
+.fade-in {
+    opacity: 1;
+}
+
 body {
     font-family: "Unlock", serif;
     height: 100vh;
