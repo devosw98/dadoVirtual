@@ -64,7 +64,7 @@ button {
     border: none;
     border-radius: 45px;
     cursor: pointer;
-    height: 50px;
+    height: 65px;
     width: 100%;
     max-width: 200px; /* Limitar el ancho en pantallas grandes */
     transition: all 0.8s ease;

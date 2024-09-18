@@ -69,13 +69,14 @@ button {
     border: none;
     border-radius: 45px;
     cursor: pointer;
-    height: 50px;
-    width: 150px;
+    height: 65px;
+    width: 100%;
+    max-width: 200px; /* Limitar el ancho en pantallas grandes */
     transition: all 0.8s ease; /* Transición suave para hover */
 }
 
 button:hover {
-    background-color: white; /* Cambia el fondo a blanco */
+    background-color: rgb(255, 255, 255); /* Cambia el fondo a blanco */
     color: black; /* Cambia el texto a negro */
     border: 5px solid black; /* Añade un borde negro */
 }
