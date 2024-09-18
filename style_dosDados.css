@@ -12,17 +12,29 @@ body {
     font-family: "Unlock", serif;
     height: 100vh;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
 }
 
 .container {
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
+    margin-top: -350px;
+    display: flex;
+    flex-direction: column; /* Mantén los elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente dentro de .container */
+    align-items: center; /* Centra el contenido horizontalmente dentro de .container */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para evitar que se vea demasiado ancho en pantallas grandes */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .containterTextButton {
     margin-bottom: 50px;
     margin-top: -180px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .btn_volverIcon:hover {
@@ -53,6 +65,8 @@ button {
     border-radius: 45px;
     cursor: pointer;
     height: 50px;
+    width: 100%;
+    max-width: 200px; /* Limitar el ancho en pantallas grandes */
     transition: all 0.8s ease;
 }
 
@@ -64,11 +78,11 @@ button:hover {
 
 /* Nuevo contenedor para los dados */
 .dados-wrapper {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px; /* Espacio entre los dados */
+    gap: 80px; /* Espacio entre los dados */
 }
 
 .dado-container {
