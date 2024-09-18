@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    margin-top: -350px;
+    margin-top: -332px;
     display: flex;
     flex-direction: column; /* Mantén los elementos en columna */
     justify-content: center; /* Centra el contenido verticalmente dentro de .container */
@@ -30,11 +30,11 @@ body {
 }
 
 .containterTextButton {
-    margin-bottom: 50px;
-    margin-top: -180px;
-    align-items: center;
-    text-align: center;
+    display: grid;
     justify-items: center;
+    align-items: center;
+    margin-bottom: 130px;
+    margin-top: -160px;
 }
 
 .btn_volverIcon:hover {
@@ -44,12 +44,16 @@ body {
 }
 
 .btn_volverIcon{
-    margin-bottom: -200px;
-    scale: 10%;
+    scale: 12%;
+    margin-bottom: -110px;
+    width: 500px;
+    height: auto;
+    cursor: pointer;
 }
 
 h1 {
-    margin-top: 15px;
+    margin-top: -90px;
+    margin-bottom: -10px;
     font-size: 40px;
     font-weight: 900; 
 }
@@ -78,7 +82,7 @@ button:hover {
 
 /* Nuevo contenedor para los dados */
 .dados-wrapper {
-    margin-top: 50px;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;

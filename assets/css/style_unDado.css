@@ -46,6 +46,7 @@ body {
 
 .btn_volverIcon{
     margin-top: -150px;
+    scale: 12%;
     width: 500px;
     height: auto;
     margin-bottom: 20px;
