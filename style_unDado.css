@@ -64,6 +64,7 @@ button:hover {
 }
 
 .dado-container {
+    margin-top: -50px;
     perspective: 20000px;
     width: 100px;
     height: 100px;
