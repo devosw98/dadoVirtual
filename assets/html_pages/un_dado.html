@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Random / Un dado</title>
+    <link rel="icon" href="../img/icon_page64.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon_page64.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icon_page64.png>
+
+    <link rel="manifest" href="../js/manifest.js">
+    <link rel="apple-touch-icon" href="../img/icon_page512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unlock&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style_unDado.css">
+</head>
+<body class="fade">
+    <div class="container">
+        <div class="containterTextButton">
+            <img class="btn_volverIcon" src="../img/volver.png" onclick="window.location.href='/dadoVirtual/index.html'">
+            <h1>Un dado</h1>
+            <button id="rollButton">Lanzar dado</button>
+        </div>
+        <div class="dado-container">
+            <div class="dado" id="dado">
+                <div class="face front"><img src="../img/1_dado.png"></div>
+                <div class="face back"><img src="../img/6_dado.png"></div>
+                <div class="face right"><img src="../img/4_dado.png"></div>
+                <div class="face left"><img src="../img/3_dado.png"></div>
+                <div class="face top"><img src="../img/5_dado.png"></div>
+                <div class="face bottom"><img src="../img/2_dado.png"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/transition.js"></script>
+</body>
+</html>
