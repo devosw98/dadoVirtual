@@ -1,0 +1,111 @@
+:root {
+  --dark-bg-color: #121212;
+  --dark-text-color: #e0e0e0;
+  --dark-primary-color: #bb86fc;
+  --dark-secondary-color: #03dac6;
+  --dark-surface-color: #1e1e1e;
+  --dark-button-bg-color: #333333;
+  --dark-button-text-color: #ffffff;
+  --dark-button-hover-bg-color: #444444;
+  --dark-button-hover-text-color: #ffffff;
+  --dark-button-border-color: #555555;
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode h1, body.dark-mode p {
+  color: var(--dark-text-color);
+}
+
+/* index.html specific styles */
+body.dark-mode .container {
+  background-color: var(--dark-surface-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode button {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-button-text-color);
+  border: 1px solid var(--dark-button-border-color);
+}
+
+body.dark-mode button:hover {
+  background-color: var(--dark-button-hover-bg-color);
+  color: var(--dark-button-hover-text-color);
+}
+
+/* un_dado.html specific styles */
+body.dark-mode .containerUnDado {
+  background-color: var(--dark-surface-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode #rollButtonUnDado {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-button-text-color);
+  border: 1px solid var(--dark-button-border-color);
+}
+
+body.dark-mode #rollButtonUnDado:hover {
+  background-color: var(--dark-button-hover-bg-color);
+  color: var(--dark-button-hover-text-color);
+}
+
+body.dark-mode .dice-container .dot {
+  background-color: var(--dark-text-color); /* Or a contrasting color like --dark-primary-color */
+}
+
+body.dark-mode #volverUnDado img {
+  filter: invert(1) hue-rotate(180deg); /* Example filter: inverts colors */
+}
+
+/* dos_dados.html specific styles */
+body.dark-mode .containerDosDados {
+  background-color: var(--dark-surface-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode #rollButtonDosDados {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-button-text-color);
+  border: 1px solid var(--dark-button-border-color);
+}
+
+body.dark-mode #rollButtonDosDados:hover {
+  background-color: var(--dark-button-hover-bg-color);
+  color: var(--dark-button-hover-text-color);
+}
+
+/* This will style dots for both dice in dos_dados.html if they share the class */
+body.dark-mode #dice1.dice-container .dot,
+body.dark-mode #dice2.dice-container .dot {
+  background-color: var(--dark-text-color); /* Or a contrasting color like --dark-primary-color */
+}
+
+body.dark-mode #volverDosDados img {
+  filter: invert(1) hue-rotate(180deg); /* Example filter: inverts colors */
+}
+
+/* General styling for toggle buttons */
+#darkModeToggle, #darkModeToggleUnDado, #darkModeToggleDosDados {
+  position: fixed; /* Or absolute, depending on layout */
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+body.dark-mode #darkModeToggle,
+body.dark-mode #darkModeToggleUnDado,
+body.dark-mode #darkModeToggleDosDados {
+  background-color: var(--dark-button-bg-color, #333);
+  color: var(--dark-button-text-color, #fff);
+  border-color: var(--dark-button-border-color, #555);
+}
